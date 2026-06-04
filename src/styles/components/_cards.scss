@@ -1,4 +1,6 @@
 .card {
+  overflow: hidden;
+
   &-1,
   &-3,
   &-5 {
@@ -49,6 +51,8 @@
 
     object-fit: cover;
 
+    transition: transform $effectDuration ease;
+
     @include on-tablet {
       aspect-ratio: 328 / 424;
     }
@@ -62,6 +66,10 @@
     }
   }
 
+  &:hover &__image {
+      transform: scale(1.05);
+    }
+    
   &__title {
     margin-bottom: 8px;
 
