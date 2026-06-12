@@ -38,22 +38,24 @@
         >
           <img
             src="src/images/icons/Bakerlab.svg"
-            alt="Bakerlab logo"
             class="header__logo-img"
+            alt=" "
           />
         </a>
 
         <button
           class="header__burger burger"
           type="button"
+          aria-expanded="false"
         >
           <span class="burger__line"></span>
+
           <span class="burger__line"></span>
         </button>
 
         <nav class="header__menu">
           <ul class="header__list">
-            <li class="header__item">
+            <li>
               <a
                 class="header__link"
                 href="#products"
@@ -61,7 +63,8 @@
                 Products
               </a>
             </li>
-            <li class="header__item">
+
+            <li>
               <a
                 class="header__link"
                 href="#about-us"
@@ -69,7 +72,8 @@
                 About Us
               </a>
             </li>
-            <li class="header__item">
+
+            <li>
               <a
                 class="header__link"
                 href="#blog"
@@ -77,16 +81,12 @@
                 Blog
               </a>
             </li>
-            <li class="header__item">
+
+            <li>
               <a
                 class="header__link header__link--contact"
                 href="#contact-us"
               >
-                <img
-                  src="src/images/icons/contact_us.svg"
-                  alt=" "
-                  class="header__icon"
-                />
                 Contact us
               </a>
             </li>
@@ -566,6 +566,9 @@
 
       <p class="footer__copyright">© Bakerlab 2022</p>
     </footer>
-    <script type="module" src="src/scripts/main.js"></script>
+    <script
+      type="module"
+      src="src/scripts/main.js"
+    ></script>
   </body>
 </html>
